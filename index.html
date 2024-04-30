@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>OTP Generator</title>
+</head>
+<body>
+    <h1>OTP Generator</h1>
+    <div class="main">
+        <h2 style="margin: 10px; color: #E3FEF7;">Generate OTP</h2>
+        <div class="select">
+            <form action="">
+                <label for="option" style="color: #E3FEF7;" >Select Digits:</label>
+            <select name="otpdigit" id="digit" required>
+                <option disabled selected value>--OTP Digits--</option>
+                <option value="4">4 Digits</option>
+                <option value="5">5 Digits</option>
+                <option value="6">6 Digits</option>
+            </select>
+            </form>
+        </div>
+        <div class="load">
+            <div class="loader"></div>
+        <h4>Generating...</h4>
+        </div>
+        <div class="otpclass">
+            <h3 style="color:#E3FEF7 ;">Your OTP is:</h3>
+            <div class="otp">123456</div>
+        </div>
+        <button>Generate</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

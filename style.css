@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h1{
+    position: absolute;
+    top: 2%;
+    margin: 1%;
+    color: #E3FEF7;
+}
+body{
+    background-color: #003C43;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main{
+    height: 60vh;
+    width: 50vb;
+    background-color: #135D66;
+    display:flex ;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    
+}
+.select{
+    display: inline-block;
+    height: 10%;
+    width: fit-content;
+    margin: 20px;
+}
+p{
+    display: inline-block;
+
+}
+h4{
+    position: relative;
+    top: 17%;
+    font-size: 2rem;
+   color:#E3FEF7 ; 
+}
+button{
+    margin-top: 20%;
+    height: 13%;
+    width: 35%;
+    border-radius: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+    background-color: #003c43a8;
+    color:#E3FEF7 ;
+}
+button:hover{
+    background-color:  #003C43;
+    transition: 0.2s ease-in-out;
+    border: 2px solid #F1FADA;
+    transform: scale(1.1);
+}
+.load{
+    height: 30%;
+    width: fit-content;
+    display: none;
+}
+.otpclass{
+    height:30% ;
+    display: none;
+
+}
+.otp{
+    height: 40%;
+    width: 100%;
+    background-color: aquamarine;
+    font-size: 1.3rem;
+    align-content: center;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-top: 5px;
+}
+/* loader */
+
+.loader {
+    display: inline-flex;
+    gap: 10px;
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    height: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background:
+      radial-gradient(farthest-side,#000 95%,#0000) 35% 35%/6px 6px no-repeat
+      #fff;
+    animation: l5 3s infinite;
+  }
+  @keyframes l5 {
+    0%,11%   {background-position:35% 35%}
+    14%,36%  {background-position:65% 35%}
+    38%,61%  {background-position:65% 65%}
+    64%,86%  {background-position:35% 65%}
+    88%,100% {background-position:35% 35%}
+  }

@@ -3,9 +3,10 @@ let btn=document.querySelector("button");
 let load=document.querySelector(".load");
 let otp=document.querySelector(".otpclass");
 let code;
-console.log(otp.childNodes)
+//console.log(otp.childNodes)
 btn.addEventListener("click",()=>{
     btn.innerText="Generating...";
+    btn.disabled=true;
     otp.style.display="none";
     load.style.display="block";
     otp.childNodes[1].style.color="#E3FEF7";
@@ -14,8 +15,9 @@ btn.addEventListener("click",()=>{
         otp.style.display="block";
         load.style.display="none";
         btn.innerText="Generate Again";
+        btn.disabled=false;
         let o=gen();
-        console.log(o);
+        //console.log(o);
         otp.childNodes[3].innerText=`${o}`;
 
     },3000);

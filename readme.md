@@ -16,7 +16,7 @@ You can try out the live demo [here](https://sudhan606.github.io/OTPgenerator/).
 
 1. Clone this repository to your local machine.
 2. Open the `index.html` file in your web browser.
-3. Enter the desired OTP length (4, 5, or 6) and click the "Generate OTP" button.
+3. Select the desired OTP length (4, 5, or 6) and click the "Generate OTP" button.
 4. The generated OTP will be displayed on the screen.
 
 ## Screenshots
